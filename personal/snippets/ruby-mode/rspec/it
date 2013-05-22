@@ -3,6 +3,6 @@
 # key: it
 # contributor: Abizer Nasir abizern@junglecandy.com
 # --
-it 'should ${1:description}' do
+it "${1:description}" do
   $0
 end
