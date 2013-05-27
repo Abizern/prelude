@@ -6,6 +6,7 @@
 #-*- mode: snippet require-final-newline: nil -*-
 # name: ${1:snippet-name}
 # key: ${2:shortcut}
+# group: ${3:group}
 # contributor: Abizer Nasir abizern@junglecandy.com
 # --
 $0
