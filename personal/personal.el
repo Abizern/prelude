@@ -1,4 +1,4 @@
-;;; abizern.el --- Emacs Prelude: Personal settings
+;;; personal.el --- Emacs Prelude: Personal settings
 ;;
 ;;; Commentary:
 ;; Personal settings to augment those of Prelude
