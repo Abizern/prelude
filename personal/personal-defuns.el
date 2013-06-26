@@ -17,5 +17,12 @@
         (call-interactively 'goto-line))
     (linum-mode -1)))
 
+;; Pretty print the json in the region
+(defun json-format ()
+  "Reformats the JSON in the region for humans."
+  (interactive)
+  (save-excursion
+    (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
+
 (provide 'personal-defuns)
 ;;; personal-defuns.el ends here
