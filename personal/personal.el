@@ -98,7 +98,7 @@
 ;;(load-theme 'solarized-dark t)
 
 ;; Make sure the packages I like are installed
-(prelude-ensure-module-deps '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell))
+(prelude-ensure-module-deps '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell yasnippet))
 
 ;; Cursor settings
 (add-to-list 'default-frame-alist '(cursor-color . "gold1"))
