@@ -86,8 +86,9 @@
 ;; Tell gist to use curl
 (setq gist-use-curl t)
 
-;; Give me back my command key
+;; Give me back my command and alt key bindings
 (setq mac-command-modifier 'super)
+(setq mac-option-modifier 'meta)
 
 ;; Save point position between sessions
 (require 'saveplace)
