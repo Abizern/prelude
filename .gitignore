@@ -19,4 +19,5 @@ projectile-bookmarks.eld
 .places
 var/
 session*
+.cask
 /tramp
