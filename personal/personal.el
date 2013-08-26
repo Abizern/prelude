@@ -53,6 +53,9 @@
 ;;; Use ido-mode for choosing snippets
 (setq yas/prompt-functions '(yas/ido-prompt yas/dropdown-prompt))
 
+;;; Use YASnippet globally
+(yas-global-mode 1)
+
 ;; ghc-mod
 (autoload 'ghc-init "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
@@ -99,7 +102,7 @@
 ;;(load-theme 'solarized-dark t)
 
 ;; Make sure the packages I like are installed
-(prelude-ensure-module-deps '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell yasnippet))
+(prelude-require-packages '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell yasnippet))
 
 ;; Cursor settings
 (add-to-list 'default-frame-alist '(cursor-color . "gold1"))
