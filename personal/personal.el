@@ -104,6 +104,9 @@
 ;; Make sure the packages I like are installed
 (prelude-require-packages '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell yasnippet))
 
+;; Deleted files should be moved to trash
+(setq delete-by-moving-to-trash t)
+
 ;; Cursor settings
 (add-to-list 'default-frame-alist '(cursor-color . "gold1"))
 (setq-default cursor-type 'bar)
