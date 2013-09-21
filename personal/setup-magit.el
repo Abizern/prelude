@@ -16,6 +16,11 @@
   ad-do-it
   (delete-other-windows))
 
+(defadvice magit-quit-window (around magit-restore-screen activate)
+  "Restore previously hidden windows."
+  ad-do-it
+  (jump-to-register :magit-fullscreen))
+
 (defun magit-quit-session ()
   "Restore the previous window configuration and kill the magit buffer."
   (interactive)
