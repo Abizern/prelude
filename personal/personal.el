@@ -102,7 +102,7 @@
 ;;(load-theme 'solarized-dark t)
 
 ;; Make sure the packages I like are installed
-(prelude-require-packages '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell yasnippet))
+(prelude-require-packages '(haskell-mode ghc ghci-completion markdown-mode solarized-theme sass-mode textile-mode inf-ruby windresize ace-jump-mode exec-path-from-shell yasnippet web-mode))
 
 ;; Deleted files should be moved to trash
 (setq delete-by-moving-to-trash t)
