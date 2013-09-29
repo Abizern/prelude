@@ -15,9 +15,11 @@
 ;;;; Keybinding for org-agenda
 (define-key global-map (kbd "C-c a") 'org-agenda)
 ;;;; Don't keep track of when a TODO item is finished
+(defvar org-log-done)
 (setq org-log-done nil)
 
 ;;; recentf
+(defvar recentf-max-menu-items)
 (setq recentf-max-menu-items 25)
 (global-set-key (kbd "C-c C-r") 'recentf-open-files)
 
