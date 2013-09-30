@@ -18,7 +18,8 @@
  '(safe-local-variable-values (quote ((require-final-newline) (encoding . utf-8))))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
- '(visible-bell t))
+ '(visible-bell t)
+ '(yas-snippet-dirs (quote ("/Users/abizer/.emacs.d/elpa/yasnippet-20130907.1855/snippets")) nil (yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
