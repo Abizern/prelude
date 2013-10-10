@@ -2,6 +2,7 @@
 ;;
 ;;; Commentary:
 ;; Personal settings to augment those of Prelude
+;; Install Emacs through homebrew with --cocoa --srgb
 
 ;;; Code:
 
