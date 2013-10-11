@@ -19,7 +19,8 @@
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(visible-bell t)
- '(yas-snippet-dirs (quote ("~/.emacs.d/personal/snippets" "/Users/abizer/.emacs.d/elpa/yasnippet-20131010.2/snippets")) nil (yasnippet)))
+ '(yas-global-mode t nil (yasnippet))
+ '(yas-snippet-dirs (quote ("~/.emacs.d/personal/snippets" "~/.emacs.d/elpa/yasnippet-20131010.2/snippets")) nil (yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
