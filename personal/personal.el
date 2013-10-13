@@ -57,9 +57,9 @@
 ;;; Use YASnippet globally
 (yas-global-mode 1)
 
-;; ghc-mod
-(autoload 'ghc-init "ghc" nil t)
-(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+;; Haskell
+(define-key haskell-mode-map (kbd "C-x C-s") 'haskell-mode-save-buffer)
+
 
 ;; Enable erase-buffer
 (put 'erase-buffer 'disabled nil)
