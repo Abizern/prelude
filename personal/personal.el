@@ -57,10 +57,6 @@
 ;;; Use YASnippet globally
 (yas-global-mode 1)
 
-;; Haskell
-(define-key haskell-mode-map (kbd "C-x C-s") 'haskell-mode-save-buffer)
-
-
 ;; Enable erase-buffer
 (put 'erase-buffer 'disabled nil)
 
