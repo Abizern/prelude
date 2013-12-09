@@ -101,6 +101,9 @@ Will only occur if prelude-whitespace is also enabled."
                                          try-complete-lisp-symbol-partially
                                          try-complete-lisp-symbol))
 
+;; smart tab behavior - indent or complete
+(setq tab-always-indent 'complete)
+
 ;; smart pairing for all
 (require 'smartparens-config)
 (setq sp-base-key-bindings 'paredit)
@@ -110,9 +113,10 @@ Will only occur if prelude-whitespace is also enabled."
 
 (show-smartparens-global-mode +1)
 
-(define-key prog-mode-map (kbd "M-(") (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "(")))
-(define-key prog-mode-map (kbd "M-[") (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "[")))
-(define-key prog-mode-map (kbd "M-\"") (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "\"")))
+(define-key prog-mode-map (kbd "M-(") (prelude-wrap-with "("))
+;; FIXME: pick terminal friendly binding
+;; (define-key prog-mode-map (kbd "M-[") (prelude-wrap-with "["))
+(define-key prog-mode-map (kbd "M-\"") (prelude-wrap-with "\""))
 
 ;; disable annoying blink-matching-paren
 (setq blink-matching-paren nil)
