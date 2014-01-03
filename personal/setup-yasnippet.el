@@ -2,23 +2,23 @@
 ;;
 ;;
 ;;; Commentary:
-;; Updating yasnippet seems to miss out the new directory.
-;; Setting up the snippet dirs here means I don't have to 
-;; manually update custom.el
-;;
+;; YASnippet setup.
 
 ;;; Code:
 (require 'yasnippet)
 
-(defvar yas-version)
+;;; Remove binding of <tab> key from Markdown cycle
+;;; This way I can use YASnippets in my markdown files.
+(defvar markdown-mode-map)
+(defun markdown-unset-tab ()
+  "Markdown-mode-hook."
+  (define-key markdown-mode-map (kbd "<tab>") nil))
+(add-hook 'markdown-mode-hook '(lambda() (markdown-unset-tab)))
 
-;; Change this to point to the correct yasnippet version
-(setq yas-version "200131231.758")
+;;; Use ido-mode for choosing snippets
+(setq yas/prompt-functions '(yas/ido-prompt yas/dropdown-prompt))
 
-(setq yas-snippet-dirs
-      '("~/.emacs.d/personal/snippets"
-        (concat "/.emacs.d/elpa/yasnippet-" yas-version)
-        ))
-
+;;; Use YASnippet globally
+(yas-global-mode 1)
 
 ;;; setup-yasnippet.el ends here
