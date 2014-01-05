@@ -14,7 +14,7 @@
   (interactive "sTitle: \nsTags: ")
   (let ((file-name (hakyll-post-title title)))
     (set-buffer (get-buffer-create file-name))
-    (progn (markdown-mode))
+    (markdown-mode)
     (insert
      (format "---\ntitle: %s\ntags: %s\ndescription: \n---\n\n" title tags))
     (write-file
@@ -26,7 +26,7 @@
   (interactive "sTitle: ")
   (let ((file-name (hakyll-note-title title)))
     (set-buffer (get-buffer-create file-name))
-    (progn (markdown-mode))
+    (markdown-mode)
     (insert (format "---\ntitle: %s\ndescription: \n---\n\n" title))
     (write-file
      (expand-file-name file-name (concat (hakyll-site-location) "notes")))
