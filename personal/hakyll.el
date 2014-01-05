@@ -1,6 +1,5 @@
 ;;; hakyll.el --- Convenience functions for working with Hakyll.
 ;;
-;;
 ;;; Commentary:
 ;; Convenience functions for working with Hakyll.
 
@@ -21,9 +20,14 @@
     (switch-to-buffer file-name)
     ))
 
+(defun hakyll-new-note (title)
+  "Create a new Note with TITLE."
+  (interactive "sTitle: ")
+  )
+
 (defun hakyll-title (title)
   "Return a name based on TITLE to use for the file name."
-  (concat (format-time-string "%Y-%m-%d") "-" (replace-regexp-in-string " " "-" title) ".md")
+  (concat (format-time-string "%Y-%m-%d") "-" (replace-regexp-in-string " " "-" title) ".markdown")
   )
 
 ;;; hakyll.el ends here
