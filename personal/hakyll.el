@@ -16,7 +16,9 @@
     (set-buffer (get-buffer-create file-name))
     (markdown-mode)
     (insert
-     (format "---\ntitle: %s\ntags: %s\ndescription: \n---\n\n" title tags))
+     (format "---\ntitle: %s\ntags: %s\ndescription: \n---\n\n"
+             title
+             (downcase tags)))
     (write-file
      (expand-file-name file-name (concat (hakyll-site-location) "posts")))
     (switch-to-buffer file-name)))
