@@ -7,6 +7,17 @@
 ;;; Code:
 (require 'yasnippet)
 
+(defvar prelude-personal-dir)
+(defvar prelude-personal-snippets-dir
+  (expand-file-name "snippets" prelude-personal-dir)
+  "This folder houses additional YASnippet bundles added by users.")
+
+(add-to-list 'yas-snippet-dirs prelude-personal-snippets-dir)
+
+;; term-mode does not play well with YASnippet
+(add-hook 'term-mode-hook (lambda ()
+                            (yas-minor-mode -1)))
+
 ;;; Remove binding of <tab> key from Markdown cycle
 ;;; This way I can use YASnippets in my markdown files.
 (defvar markdown-mode-map)
