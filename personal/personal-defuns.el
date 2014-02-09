@@ -22,5 +22,11 @@
   (save-excursion
     (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
 
+(defun batf ()
+  "Bring the batf.txt file to the front, creating the buffer if necessary."
+  (interactive)
+  (find-file "~/Dropbox/notes/batf.txt"))
+
+
 (provide 'personal-defuns)
 ;;; personal-defuns.el ends here
