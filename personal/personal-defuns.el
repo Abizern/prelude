@@ -7,7 +7,6 @@
 
 ;;; Code:
 
-;; Show line numbers only when moving by line
 (defun goto-line-with-feedback ()
   "Show line numbers temporarily, while prompting for the line number input."
   (interactive)
@@ -17,7 +16,6 @@
         (call-interactively 'goto-line))
     (linum-mode -1)))
 
-;; Pretty print the json in the region
 (defun json-format ()
   "Reformats the JSON in the region for humans."
   (interactive)
