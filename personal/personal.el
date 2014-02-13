@@ -81,7 +81,7 @@
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 ;; Make sure the packages I like are installed
-(prelude-require-packages '(haskell-mode ghc ghci-completion markdown-mode sass-mode textile-mode inf-ruby windresize ace-jump-mode yasnippet web-mode))
+(prelude-require-packages '(haskell-mode ghc ghci-completion markdown-mode sass-mode textile-mode inf-ruby windresize ace-jump-mode yasnippet web-mode flycheck-haskell))
 
 ;; Deleted files should be moved to trash
 (setq delete-by-moving-to-trash t)
