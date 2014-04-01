@@ -48,4 +48,5 @@
    (replace-regexp-in-string " " "-" (downcase title))
    ".markdown"))
 
+(provide 'hakyll)
 ;;; hakyll.el ends here
