@@ -5,9 +5,8 @@
 
 ;;; Code:
 
-(defun hakyll-site-location ()
-  "Return the location of the Hakyll files."
-  "~/Sites/hblog/")
+(defvar hakyll-site-location "~/Sites/hblog/"
+  "The location of the Hakyll files.")
 
 (defun hakyll-new-post (title tags)
   "Create a new Hakyll post for today with TITLE and TAGS."
