@@ -13,13 +13,12 @@
   (interactive "sTitle: \nsTags: ")
   (let ((file-name (hakyll-post-title title)))
     (set-buffer (get-buffer-create file-name))
-    (markdown-mode)
     (insert
      (format "---\ntitle: %s\ntags: %s\ndescription: \n---\n\n"
              title
              (downcase tags)))
     (write-file
-     (expand-file-name file-name (concat (hakyll-site-location) "posts")))
+     (expand-file-name file-name (concat hakyll-site-location "posts")))
     (switch-to-buffer file-name)))
 
 (defun hakyll-new-note (title)
@@ -27,10 +26,9 @@
   (interactive "sTitle: ")
   (let ((file-name (hakyll-note-title title)))
     (set-buffer (get-buffer-create file-name))
-    (markdown-mode)
     (insert (format "---\ntitle: %s\ndescription: \n---\n\n" title))
     (write-file
-     (expand-file-name file-name (concat (hakyll-site-location) "notes")))
+     (expand-file-name file-name (concat hakyll-site-location "notes")))
     (switch-to-buffer file-name)))
 
 (defun hakyll-post-title (title)
