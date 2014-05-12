@@ -14,8 +14,7 @@
  '(safe-local-variable-values (quote ((require-final-newline) (encoding . utf-8))))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
- '(visible-bell t)
- '(yas-global-mode t nil (yasnippet)))
+ '(visible-bell t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
