@@ -21,3 +21,4 @@ var/
 session*
 .cask
 tramp
+/var/pcache
