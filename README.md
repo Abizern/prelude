@@ -54,7 +54,6 @@ advised to always run Prelude with the latest Emacs - currently
 	- [Customized C-a behavior](#customized-c-a-behavior)
 	- [Poor ido matching performance on large datasets](#poor-ido-matching-performance-on-large-datasets)
 	- [Windows compatibility](#windows-compatibility)
-- [Share the knowledge](#share-the-knowledge)
 - [Known issues](#known-issues)
 - [Support](#support)
 - [Contributors](#contributors)
@@ -613,13 +612,6 @@ While everything in Prelude should work fine in Windows, I test it only
 with Linux & OSX, so there are Windows related problems from time to
 time. This situation will probably improve over time.
 
-## Share the knowledge
-
-[EmacsWiki](http://emacswiki.org) collects useful resources for working
-with GNU Emacs. Please, take the time to peruse and improve them as
-you accumulate knowledge about Emacs. Prelude makes this especially
-easy, since it bundles
-
 ## Known issues
 
 Check out the project's
@@ -642,6 +634,10 @@ development of Emacs Prelude.
 
 Bug reports and suggestions for improvements are always
 welcome. GitHub pull requests are even better! :-)
+
+I'm also accepting financial contributions via [gittip](https://www.gittip.com/bbatsov).
+
+[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/bbatsov)
 
 Cheers,<br/>
 [Bozhidar](https://twitter.com/bbatsov)
