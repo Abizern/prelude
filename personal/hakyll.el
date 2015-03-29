@@ -21,17 +21,29 @@
      (expand-file-name file-name (concat hakyll-site-location "posts")))
     (switch-to-buffer file-name)))
 
+(defun hakyll-new-talk (title)
+  "Create a new Hakyll talk for today with TITLE."
+  (interactive "sTitle: ")
+  (let ((file-name (hakyll-file-name-with-date title)))
+    (set-buffer (get-buffer-create file-name))
+    (insert
+     (format "---\ntitle: %s\ndescription: \n---\n\n" title))
+    (write-file
+     (expand-file-name file-name (concat hakyll-site-location "talks")))
+    (switch-to-buffer file-name)))
+
+
 (defun hakyll-new-note (title)
   "Create a new Note with TITLE."
   (interactive "sTitle: ")
-  (let ((file-name (hakyll-note-title title)))
+  (let ((file-name (hakyll-file-name title)))
     (set-buffer (get-buffer-create file-name))
     (insert (format "---\ntitle: %s\ndescription: \n---\n\n" title))
     (write-file
      (expand-file-name file-name (concat hakyll-site-location "notes")))
     (switch-to-buffer file-name)))
 
-(defun hakyll-post-title (title)
+(defun hakyll-file-name-with-date (title)
   "Return a file name based on TITLE for the post."
   (concat
    (format-time-string "%Y-%m-%d")
@@ -39,7 +51,7 @@
    (replace-regexp-in-string " " "-" (downcase title))
    ".markdown"))
 
-(defun hakyll-note-title (title)
+(defun hakyll-file-name (title)
   "Return a file name based on TITLE for the note."
   (concat
    (replace-regexp-in-string " " "-" (downcase title))
