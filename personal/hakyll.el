@@ -43,6 +43,18 @@
      (expand-file-name file-name (concat hakyll-site-location "notes")))
     (switch-to-buffer file-name)))
 
+
+(defun hakyll-new-source (title)
+  "Create a new Source post with TITLE."
+  (interactive "sTitle: ")
+  (let ((file-name (hakyll-file-name title)))
+    (set-buffer (get-buffer-create file-name))
+    (insert (format "---\ntitle: %s\ndescription: \n---\n\n" title))
+    (write-file
+     (expand-file-name file-name (concat hakyll-site-location "source")))
+    (switch-to-buffer file-name)))
+
+
 (defun hakyll-file-name-with-date (title)
   "Return a file name based on TITLE for the post."
   (concat
