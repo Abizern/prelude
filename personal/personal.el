@@ -89,7 +89,8 @@
                             textile-mode
                             windresize
                             web-mode
-                            flycheck-haskell))
+                            flycheck-haskell
+                            swift-mode))
 
 ;; Deleted files should be moved to trash
 (setq delete-by-moving-to-trash t)
