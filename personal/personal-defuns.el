@@ -25,7 +25,7 @@
 (defun batf ()
   "Bring the batf.txt file to the front, creating the buffer if necessary."
   (interactive)
-  (find-file "~/Dropbox/notes/batf.txt"))
+  (find-file "~/Dropbox/Notes/batf.org"))
 
 
 (defun fake ()
