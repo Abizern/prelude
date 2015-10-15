@@ -28,5 +28,11 @@
   (find-file "~/Dropbox/notes/batf.txt"))
 
 
+(defun fake ()
+  "Bring the FakeBook file to the front, creating the buffer if necessary."
+  (interactive)
+  (find-file "~/Dropbox/notes/fakebook.org"))
+
+
 (provide 'personal-defuns)
 ;;; personal-defuns.el ends here
