@@ -28,7 +28,7 @@
 (setq whitespace-line-column 250)
 
 ;; But it would be nice to autoflow long paragraphs
-(setq-default fill-column 80)
+(setq-default fill-column 120)
 
 ;; Turn off whitespace mode
 (setq prelude-whitespace nil)
@@ -99,8 +99,15 @@
 (add-to-list 'default-frame-alist '(cursor-color . "gold1"))
 (setq-default cursor-type 'bar)
 
+;; Fix for visual bell in the middle of the screen
+(setq visible-bell t)
+(setq ring-bell-function 'ignore)
+
 
 ;; If I'm running emacs, then I want it to be a server
 (require 'server)
 (unless (server-running-p)
   (server-start))
+
+(provide 'personal)
+;;; personal.el ends here
