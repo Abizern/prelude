@@ -66,7 +66,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.h$" . objc-mode))
 (add-to-list 'auto-mode-alist '("\\.m$" . objc-mode))
-(add-to-list 'auto-mode-alist '("\\.swift$" . swift-mode))
 
 
 ;; Tell gist to use curl
@@ -90,7 +89,8 @@
                             textile-mode
                             windresize
                             web-mode
-                            flycheck-haskell))
+                            flycheck-haskell
+                            swift-mode))
 
 ;; Deleted files should be moved to trash
 (setq delete-by-moving-to-trash t)
