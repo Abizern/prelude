@@ -90,7 +90,8 @@
                             windresize
                             web-mode
                             flycheck-haskell
-                            swift-mode))
+                            swift-mode
+                            dracula-theme))
 
 ;; Deleted files should be moved to trash
 (setq delete-by-moving-to-trash t)

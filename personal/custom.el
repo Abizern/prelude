@@ -22,7 +22,7 @@
     ("~/Dropbox/Notes/batf/batf.org" "~/Dropbox/Notes/batf/personal.org" "~/Dropbox/Notes/batf/contracting.org")))
  '(package-selected-packages
    (quote
-    (zop-to-char zenburn-theme yari windresize which-key web-mode volatile-highlights vkill undo-tree textile-mode swift-mode smex smartrep smartparens smart-mode-line slime scss-mode sass-mode ruby-tools rainbow-mode rainbow-delimiters ov operate-on-number move-text markdown-mode magit key-chord json-rpc json-mode js2-mode inf-ruby imenu-anywhere ido-ubiquitous helm-projectile guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist ghci-completion ghc flycheck-haskell flx-ido expand-region exec-path-from-shell elisp-slime-nav easy-kill discover-my-major diminish diff-hl crux cdlatex browse-kill-ring beacon auctex anzu anaconda-mode ace-window ace-jump-mode ace-jump-buffer)))
+    (dracula-theme zop-to-char zenburn-theme yari windresize which-key web-mode volatile-highlights vkill undo-tree textile-mode swift-mode smex smartrep smartparens smart-mode-line slime scss-mode sass-mode ruby-tools rainbow-mode rainbow-delimiters ov operate-on-number move-text markdown-mode magit key-chord json-rpc json-mode js2-mode inf-ruby imenu-anywhere ido-ubiquitous helm-projectile guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist ghci-completion ghc flycheck-haskell flx-ido expand-region exec-path-from-shell elisp-slime-nav easy-kill discover-my-major diminish diff-hl crux cdlatex browse-kill-ring beacon auctex anzu anaconda-mode ace-window ace-jump-mode ace-jump-buffer)))
  '(require-final-newline t)
  '(safe-local-variable-values (quote ((require-final-newline) (encoding . utf-8))))
  '(scroll-bar-mode nil)
