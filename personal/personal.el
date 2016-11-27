@@ -93,6 +93,9 @@
                             swift-mode
                             dracula-theme))
 
+;; Now that I've required the theme.
+(setq prelude-theme 'dracula)
+
 ;; Deleted files should be moved to trash
 (setq delete-by-moving-to-trash t)
 
