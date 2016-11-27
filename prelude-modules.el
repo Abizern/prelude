@@ -6,6 +6,7 @@
 ;;; Code:
 
 (require 'prelude-c)
+(require 'prelude-company)
 (require 'prelude-common-lisp)
 (require 'prelude-css)
 (require 'prelude-emacs-lisp)
